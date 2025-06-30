@@ -23,7 +23,7 @@
 
 Portfolio
 
-![Portfolio](Portfolio.png)
+![Portfolio](Portfolio.jpeg)
 
 Wireframe
 
