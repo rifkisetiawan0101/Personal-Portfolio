@@ -1,0 +1,265 @@
+/* Tema Gelap Kustom */
+body.dark_theme {
+    background-color: #0B0B0E;
+    color: #ffffff;
+    font-family: 'Inter Regular';
+}
+
+.navbar {
+    background-color: #292C3D;
+    height: 72px;
+}
+
+.hero_section {
+    background-color: #0B0B0E;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.profile_image {
+    height: 600px;
+    border-radius: 10px;
+}
+
+/* Efek hover untuk navbar */
+.nav_link {
+    transition: color 0.4s ease;
+}
+
+.nav-link:hover {
+    color: #5973A6;
+}
+
+.section_even {
+    background-color: #17181C;
+}
+
+.section_odd {
+    background-color: #1E1F24;
+}
+
+.divider {
+    width: 70px;
+    border-width: 4px ;
+    justify-self: center;
+    border-color: whitesmoke;
+}
+
+.skill_summary {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Untuk wrapper statistik */
+.stat-box {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #1E1F24;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: scale(1.025);
+    box-shadow: 0 10px 20px #1E1F24;
+}
+
+.stat-box div:last-child {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.software_section {
+    overflow: hidden;
+    position: relative;
+}
+
+.software_logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.latest_section {
+    background-color: #1E1F24;
+}
+
+.portfolio_image, .portfolio_box{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio_image_caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 44, 61, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio_image:hover .portfolio_image_caption {
+    opacity: 1;
+}
+
+.portfolio_image:hover img, .portfolio_box:hover {
+    transform: scale(1.025);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.modal-content {
+    top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    cursor: default; /* Reset cursor for image */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.prev-button {
+    left: 3%;
+}
+
+.next-button {
+    right: 3%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    color: #f1f1f1;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    background-color: #292C3D;
+} 
+
+@media (max-width:767px)  {
+    .hero_section .row {
+        text-align: center;
+    }
+
+    .software_logo {
+        height: 100px; /* Ukuran lebih kecil untuk layar mobile */
+    }
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('Font/Inter-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Inter Italic';
+    src: url('Font/Inter-Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('Font/Inter-Bold.otf') format('opentype');
+}
+
+
+canvas {
+    box-shadow: -3px 2px 9px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    touch-action: none;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.tools .button {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.pen-range {
+    align-self: center;
+    margin: 0 10px;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}

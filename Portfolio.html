@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifki Setiawan - Game Programmer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio_Style.css">
+    <!-- Bootstrap JS dan JavaScript Kustom -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Portfolio_Script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7Mb0CxQKtv/3mDZ70e5mIeyD4ynP9vuaeR+60=" crossorigin="anonymous" defer></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=InitializeMap"></script>
+</head>
+
+<body class="dark_theme">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Rifki Setiawan</a>
+
+            <!--button navigasi buat di mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav_item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero_section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fst-italic text-white ">Greetings! I am Rifki Setiawan and I am a Game Programmer</h1>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="Image/Foto Profil.png" alt="Foto Profil" class="profile_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section_even d-flex align-items-center">
+        <div class="container py-5">
+            <h2 class="section_title text-center fw-bold fs-1">About Me</h2>
+            <hr class="divider mb-5">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <p class="lead">
+                        Sebagai game programmer yang berfokus pada pengembangan multimedia digital, saya menggabungkan keahlian teknis dan kreativitas untuk menciptakan pengalaman interaktif yang memukau. Saat ini, saya adalah mahasiswa D4 Teknik Multimedia Digital di Politeknik Negeri Jakarta, dengan komitmen kuat dalam menghadirkan solusi inovatif melalui teknologi game.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skills_progress fst-italic">
+                        <div class="skill_item mb-2">
+                            <h6>Programming <span class="skill_percentage">75%</span></h6>
+                            <svg width="100%" height="20" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <rect x="0" y="0" width="100" height="10" fill="#e9ecef" rx="2" ry="5"/>
+                                <rect x="0" y="0" width="75" height="10" fill="#0d6efd" rx="2" ry="5">
+                                    <animate attributeName="width" from="0" to="75" dur="3s" />
+                                </rect>
+                            </svg>
+                        </div>
+                        <div class="skill_item mb-2">
+                            <h6>3D Modelling <span class="skill_percentage">60%</span></h6>
+                            <svg width="100%" height="20" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <rect x="0" y="0" width="100" height="10" fill="#e9ecef" rx="2" ry="5"/>
+                                <rect x="0" y="0" width="60" height="10" fill="#0d6efd" rx="2" ry="5">
+                                    <animate attributeName="width" from="0" to="60" dur="2.4s" />
+                                </rect>
+                            </svg>
+                        </div>
+                        <div class="skill_item mb-2">
+                            <h6>2D Art & Animation <span class="skill_percentage">50%</span></h6>
+                            <svg width="100%" height="20" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <rect x="0" y="0" width="100" height="10" fill="#e9ecef" rx="2" ry="5"/>
+                                <rect x="0" y="0" width="50" height="10" fill="#0d6efd" rx="2" ry="5">
+                                    <animate attributeName="width" from="0" to="50" dur="2s" />
+                                </rect>
+                            </svg>
+                        </div>
+                        <div class="skill_item mb-2">
+                            <h6>UI & UX Design <span class="skill_percentage">40%</span></h6>
+                            <svg width="100%" height="20" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <rect x="0" y="0" width="100" height="10" fill="#e9ecef" rx="2" ry="5"/>
+                                <rect x="0" y="0" width="40" height="10" fill="#0d6efd" rx="2" ry="5">
+                                    <animate attributeName="width" from="0" to="40" dur="1.6s" />
+                                </rect>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="stat-box text-center">
+                        <div class="skill_summary" data-count="3">3</div>
+                        <div>GAMES COMPLETED</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="stat-box text-center">
+                        <div class="skill_summary" data-count="30">30+</div>
+                        <div>3D ASSETS</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="stat-box text-center">
+                        <div class="skill_summary" data-count="15">15+</div>
+                        <div>2D ILLUSTRATIONS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="section_odd d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Unity Logo.png" alt="Software 1" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/CS Logo.png" alt="Software 2" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/VS Logo.png" alt="Software 3" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/VSCode Logo.png" alt="Software 4" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/CPP Logo.png" alt="Software 5" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Processing Logo.png" alt="Software 6" class="software_logo">
+            </div>
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Maya Logo.png" alt="Software 7" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Photoshop Logo.png" alt="Software 8" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Animate Logo.png" alt="Software 9" class="software_logo">
+            </div>
+            <div class="col-md-2 col-6 text-center mb-4">
+                <img src="Image/Figma Logo.png" alt="Software 10" class="software_logo">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section_even d-flex align-items-center">
+        <div class="container-fluid py-5">
+            <h2 class="section_title text-center fw-bold fs-1">Portfolio</h2>
+            <hr class="divider mb-5">
+            <div class="row g-4">
+                <!-- Portfolio 1 -->
+                <div class="portfolio_box col-lg-4 col-md-6">
+                    <a class="portfolio_image" href="Image/Mysric Market.png">
+                        <img class="img-fluid rounded" src="Image/Mysric Market.png" alt="Game 1">
+                        <div class="portfolio_image_caption text-white text-center p-3">
+                            <div class="project_title fw-bold mb-2 fs-4">Mystic Market Tycoon</div>
+                            <div class="project_description mb-3 fs-6">Game simulasi bisnis bertemakan nuansa lokal mistis Indonesia</div>
+                            <div class="project_position fw-bold fst-italic fs-5">Game Programmer</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Portfolio 2 -->
+                <div class="portfolio_box col-lg-4 col-md-6">
+                    <a class="portfolio_image" href="Image/Cikini - Gondangdia.png">
+                        <img class="img-fluid rounded" src="Image/Cikini - Gondangdia.png" alt="Game 2">
+                        <div class="portfolio_image_caption text-white text-center p-3">
+                            <div class="project_title fw-bold mb-2 fs-4">Cikini Ke Gondangdia</div>
+                            <div class="project_description mb-3 fs-6">Game simulasi kereta post-apocalypse yang diprogram di Processing Java</div>
+                            <div class="project_position fw-bold fst-italic fs-5">Full Game Programmer</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Portfolio 3 -->
+                <div class="portfolio_box col-lg-4 col-md-6">
+                    <a class="portfolio_image" href="Image/Manjad.png">
+                        <img class="img-fluid rounded" src="Image/Manjad.png" alt="Game 3">
+                        <div class="portfolio_image_caption text-white text-center p-3">
+                            <div class="project_title fw-bold mb-2 fs-4">Manjad</div>
+                            <div class="project_description mb-3 fs-6">Game adventure yang menggelinding untuk mencapai puncak di dunia post-apocalypse</div>
+                            <div class="project_position fw-bold fst-italic fs-5">Logic Mechanic & Programmer</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolioModal" class="portfolio-modal">
+            <span class="close-modal">&times;</span>
+            <!-- <button class="nav-button prev-button">&lt;</button>
+            <button class="nav-button next-button">&gt;</button> -->
+            <div class="modal-content">
+                <img id="modalImage" src="" alt="Portfolio Image">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- latest Section -->
+    <section id="latest" class="section_odd d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="video-player">
+                    <iframe width="100%" height="320" src="https://www.youtube.com/embed/CdgIDbUS7bo" frameborder="0" allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="lead row m-2">
+                    <div class="col-12 fst-italic">
+                        <p>" Rojak, seorang indigo, sering bermain dengan teman-teman mistisnya. Ia kerap kali mengunjungi hutan dan pegunungan demi bertemu mereka. Lama kelamaan, Rojak menyadari bahwa para hantu di pegunungan kesulitan mendapatkan pasokan barang, tidak seperti di kota besar. Tergerak untuk membantu, Rojak membuka pasar tradisional terdekat. "</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-12">
+                        <p>Mystic Market Tycoon adalah game simulasi bisnis yang bertemakan nuansa lokal dari urban pasar mistis Indonesia dengan fun experience-nya yang mengharuskan pemain untuk mengembangkan, menjaga pasar dari ancaman, dan mengumpulkan bahan agar pasar menjadi populer di kalangan hantu.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-4">
+                <div class="col-md-6">
+                    <div class="video-player">
+                    <iframe width="100%" height="320" src="https://www.youtube.com/embed/qTV3yais-3U" frameborder="0" allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="lead row m-2">
+                    <div class="col-12 fst-italic">
+                        <p>" Manjad dengan Gebol! Lompati, gelinding, Hindari, dan jangan Jatuh, bawa Gebol menuju puncak!. "</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-12">
+                        <p>"Manjad", sebuah permainan platformer 2D yang sederhana namun menantang. Tujuan utama permainan ini adalah membantu karakter utama, Gebol, memanjat ke puncak untuk bertemu dengan teman-temannya.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <!-- <section id="maps" class="section_even d-flex align-items-center">
+        <div class="container py-5 mb-5">
+            <h2 class="section_title text-center fw-bold fs-1">My Location</h2>
+            <hr class="divider mb-5">
+            <div id="map"></div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section-->
+    <section id="contact" class="section_odd d-flex align-items-center">
+        <div class="container py-5 mb-5">
+            <h2 class="section_title text-center fw-bold fs-1">Contact Me</h2>
+            <hr class="divider mb-5">
+            <p class="text-center mb-5">
+                Kirimkan pesan email anda untuk kita saling terhubung!
+            </p>
+            <form id="contactForm" class="w-75 mx-auto">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Masukkan nomor telepon" />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Masukkan pesan" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="signature" class="form-label">Signature</label>
+                    <div class="field">
+                        <canvas id="canvas" class="form-control"></canvas>
+                        <div class="tools">
+                            <button onclick="undo_last()" type="button" class="button">Undo</button>
+                            <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+
+                            <input oninput="draw_width  = this.value" type="range" min="1" max="100" value="1" class="pen-range">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Rifki Setiawan. All Rights Reserved.</p>
+            <div class="social-icons">
+                <!-- Facebook -->
+                <a href="#" class="text-white mx-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <!-- Twitter/X -->
+                <a href="#" class="text-white mx-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" class="text-white mx-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="#" class="text-white mx-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS dan JavaScript Kustom -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Portfolio_Script.js" defer></script>
+</body>
+</html>
