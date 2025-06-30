@@ -36,4 +36,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🙏 Credits
 
 - All images, icons, and fonts are used for educational purposes.
-- Developed by Rifki Setiawan as a final project for the Web Design course at Politeknik
+- Developed by Rifki Setiawan as a final project for the Web Design course at Politeknik Negeri Jakarta
